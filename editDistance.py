@@ -116,7 +116,7 @@ def editPath(word1, word2):
     return path
 
 
-def print_edits(editpath, word1, word2):
+def printEdits(editpath, word1, word2):
     """
     Print the minimum edits to transform one word to another.
     E.g. 
@@ -158,18 +158,18 @@ def print_edits(editpath, word1, word2):
 
 
 def main(argv):
-    word1 = 'zzzzHEllooWurlld'  # kitten   AACAGTTACC  sunday     make this empty  zzzzHEllooWurlld
-    word2 = 'HelloWorld'  # sitting  TAAGGTCA    saturday   ''               HelloWorld 
+    #word1 = 'zzzzHEllooWurlld'  # kitten   AACAGTTACC  sunday     make this empty  zzzzHEllooWurlld
+    #word2 = 'HelloWorld'  # sitting  TAAGGTCA    saturday   ''               HelloWorld 
 
-    #word1 = argv[1]
-    #word2 = argv[2] if len(argv) == 3 else ''
+    word1 = argv[1]
+    word2 = argv[2] if len(argv) == 3 else ''
 
     print("{0} -> {1}".format(word1, word2))
 
     editpath = editPath(word1, word2)
     print("edit distance:", editpath[-1][1])
 
-    print_edits(editpath, word1, word2)
+    printEdits(editpath, word1, word2)
 
 if __name__ == '__main__':
     main(sys.argv)
