@@ -1,0 +1,13 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+
+# JetBrains IDEs
+/.idea
+
+# virtualenv
+.venv
+venv/
+ENV/
+
+# vscode
+.vscode/*
